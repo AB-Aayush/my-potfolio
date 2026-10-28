@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aayush Bhaskar | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Star canvas for black center -->
+  <canvas id="starCanvas"></canvas>
+
+  <!-- Rocket cursor element -->
+  <div id="rocket-cursor">🚀</div>
+
+  <!-- ─── SIDEBAR ─── -->
+  <aside class="sidebar">
+
+    <!-- Avatar -->
+    <div class="avatar-wrap">
+      <div class="avatar">
+        <span>AB</span>
+      </div>
+      <div class="avatar-ring"></div>
+    </div>
+
+    <!-- Name -->
+    <h1 class="sidebar-name">Aayush<br/>Bhaskar</h1>
+
+    <!-- Nav links -->
+    <nav class="sidebar-nav">
+      <a href="#age"       class="nav-link" data-label="Age">        <span class="icon">🎂</span> Age       </a>
+      <a href="#ambition"  class="nav-link" data-label="Ambition">   <span class="icon">🎯</span> Ambition  </a>
+      <a href="#skills"    class="nav-link" data-label="Skills">     <span class="icon">⚡</span> Skills    </a>
+      <a href="#education" class="nav-link" data-label="Education">  <span class="icon">🎓</span> Education </a>
+      <a href="#projects"  class="nav-link" data-label="Projects">   <span class="icon">💻</span> Projects  </a>
+      <a href="#contact"   class="nav-link" data-label="Contact">    <span class="icon">📬</span> Contact   </a>
+    </nav>
+
+    <div class="sidebar-glow"></div>
+  </aside>
+
+  <!-- ─── MAIN CONTENT ─── -->
+  <main class="main-content">
+
+    <!-- Hero -->
+    <section class="hero">
+      <p class="hero-greeting">Hello, World! 👋</p>
+      <h2 class="hero-title">I'm <span class="highlight">Aayush Bhaskar</span></h2>
+      <p class="hero-sub">Aspiring Software Engineer · Builder of Things</p>
+      <a href="#contact" class="cta-btn">Get In Touch 🚀</a>
+    </section>
+
+    <!-- Age -->
+    <section id="age" class="card">
+      <div class="card-icon">🎂</div>
+      <h2 class="card-title">Age</h2>
+      <div class="card-body">
+        <div class="big-stat">
+          <span class="stat-number">18</span>
+          <span class="stat-label">Years Old</span>
+        </div>
+        <p class="card-desc">Young, curious and ready to take on the world of technology.</p>
+      </div>
+    </section>
+
+    <!-- Ambition -->
+    <section id="ambition" class="card">
+      <div class="card-icon">🎯</div>
+      <h2 class="card-title">Ambition</h2>
+      <div class="card-body">
+        <div class="ambition-banner">
+          <span class="ambition-text">Software Engineer</span>
+          <div class="ambition-orbit">
+            <span class="orbit-dot"></span>
+          </div>
+        </div>
+        <p class="card-desc">
+          My dream is to become a skilled <strong>Software Engineer</strong> — writing elegant code,
+          solving real-world problems and building products that matter.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="card">
+      <div class="card-icon">⚡</div>
+      <h2 class="card-title">Skills</h2>
+      <div class="card-body skills-grid">
+
+        <div class="skill-pill">
+          <span class="skill-icon">🐍</span>
+          <div>
+            <p class="skill-name">Python</p>
+            <div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-pill">
+          <span class="skill-icon">🌿</span>
+          <div>
+            <p class="skill-name">Git</p>
+            <div class="skill-bar"><div class="skill-fill" style="--w:65%"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-pill">
+          <span class="skill-icon">💻</span>
+          <div>
+            <p class="skill-name">CLI</p>
+            <div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="card">
+      <div class="card-icon">🎓</div>
+      <h2 class="card-title">Education</h2>
+      <div class="card-body">
+        <div class="edu-card">
+          <div class="edu-year">2024 – 2025</div>
+          <div class="edu-details">
+            <h3>Class 12 — Passed ✅</h3>
+            <p>Higher Secondary Education</p>
+          </div>
+        </div>
+        <div class="timeline-line"></div>
+        <div class="edu-card future">
+          <div class="edu-year">Future</div>
+          <div class="edu-details">
+            <h3>B.Tech / B.E. in Computer Science 🎯</h3>
+            <p>Next goal on the horizon</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="card">
+      <div class="card-icon">💻</div>
+      <h2 class="card-title">Projects</h2>
+      <div class="card-body projects-grid">
+
+        <div class="project-card">
+          <div class="project-top">
+            <span class="project-lang">🐍 Python</span>
+            <span class="project-status wip">In Progress</span>
+          </div>
+          <h3 class="project-name">CLI Tool</h3>
+          <p class="project-desc">A command-line utility built with Python for automating everyday tasks.</p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">CLI</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <span class="project-lang">🌿 Git</span>
+            <span class="project-status done">Done</span>
+          </div>
+          <h3 class="project-name">Portfolio Website</h3>
+          <p class="project-desc">This very portfolio — built with pure HTML &amp; CSS, no frameworks.</p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">Git</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <span class="project-lang">🐍 Python</span>
+            <span class="project-status wip">Coming Soon</span>
+          </div>
+          <h3 class="project-name">Script Collection</h3>
+          <p class="project-desc">A curated set of Python scripts for productivity and learning.</p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Automation</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="card">
+      <div class="card-icon">📬</div>
+      <h2 class="card-title">Contact</h2>
+      <div class="card-body contact-grid">
+
+        <a href="mailto:73aayushbhaskar@gmail.com" class="contact-item">
+          <div class="contact-icon-wrap">📧</div>
+          <div>
+            <p class="contact-label">Email</p>
+            <p class="contact-value">73aayushbhaskar@gmail.com</p>
+          </div>
+        </a>
+
+        <div class="contact-item">
+          <div class="contact-icon-wrap">📱</div>
+          <div>
+            <p class="contact-label">Phone</p>
+            <p class="contact-value">Available on request</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon-wrap">📍</div>
+          <div>
+            <p class="contact-label">Location</p>
+            <p class="contact-value">India 🇮🇳</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Made with 💚 by Aayush Bhaskar &nbsp;·&nbsp; 2025</p>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
